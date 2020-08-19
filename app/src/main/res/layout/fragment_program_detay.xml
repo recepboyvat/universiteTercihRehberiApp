@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramDetaylari.ProgramDetayFragment"
+    android:orientation="vertical"
+    android:textDirection="anyRtl"
+    android:background="@color/backgroundcolor">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/universityImageView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="15dp"
+                    ></ImageView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                <TextView
+                    android:id="@+id/universiteAdi"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="ABDULLAH GÜL ÜNİVERSİTESİ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                    <TextView
+                        android:id="@+id/bolumAdi"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="12dp"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:text="BİLGİSAYAR MÜHENDİSLİĞİ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="7dp"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginVertical="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genel Bilgiler"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/deeppurple"
+                    android:layout_marginVertical="3dp"
+                    />
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Program Adi:">
+            </TextView>
+            <TextView
+                android:id="@+id/programAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bilgisayar Mühendisliği(İÖ)">
+
+            </TextView>
+
+        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Puan Türü:">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/puanTuru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAYISAL">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Üniversite Tipi:">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/universiteTuru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VAKIF">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Burs Türü:">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/bursTuru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ücretli">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Genel Kontenjan:">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/genelKontenjan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="255">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Okul Birincisi Kontenjanı:">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/okulBirincisiKontenjani"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Toplam Kontenjan:">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/toplamKontenjan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="257">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ilk Yerlesme Orani:">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/ilkYerlesmeOrani"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%100">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="7dp"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginVertical="7dp"
+                android:layout_marginHorizontal="7dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puan Bilgileri"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/deeppurple"
+                    android:layout_marginVertical="3dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019"
+                    android:layout_marginLeft="100dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2018"
+                        android:layout_marginLeft="50dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017"
+                        android:layout_marginLeft="50dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taban Puan"/>
+
+                    <TextView
+                        android:id="@+id/tabanpuandokuz"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="433.29704"
+                        android:layout_marginLeft="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tabanpuansekiz"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:text="433.29704"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/tabanpuanyedi"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="433.29704"
+                        android:layout_marginLeft="12dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tavan Puan"/>
+
+                    <TextView
+                        android:id="@+id/tavanpuandokuz"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="488.29704"
+                        android:layout_marginLeft="12dp"/>
+                    <TextView
+                        android:id="@+id/tavanpuansekiz"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="488.29704"
+                        android:layout_marginLeft="12dp"/>
+                    <TextView
+                        android:id="@+id/tavanpuanyedi"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="488.29704"
+                        android:layout_marginLeft="12dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="7dp"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginVertical="7dp"
+                android:layout_marginHorizontal="7dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siralama Bilgileri"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/deeppurple"
+                    android:layout_marginVertical="3dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2019"
+                        android:layout_marginLeft="120dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2018"
+                        android:layout_marginLeft="46dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017"
+                        android:layout_marginLeft="46dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taban Siralama"/>
+
+                    <TextView
+                        android:id="@+id/tabansiralamadokuz"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="15265"
+                        android:layout_marginLeft="7dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/tabansiralamasekiz"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="155256"
+                        android:layout_marginLeft="7dp"
+                        />
+                    <TextView
+                        android:id="@+id/tabansiralamayedi"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="138000"
+                        android:layout_marginLeft="7dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tavan Siralama"/>
+
+                    <TextView
+                        android:id="@+id/tavansiralamadokuz"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="12000"
+                        android:layout_marginLeft="7dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/tavansiralamasekiz"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="100000"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="7dp"/>
+                    <TextView
+                        android:id="@+id/tavansiralamayedi"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="156000"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="7dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginVertical="7dp"
+                android:layout_marginHorizontal="7dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akademisyen Bilgisi"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/deeppurple"
+                    android:layout_marginVertical="3dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Profesör Sayısı:"/>
+                    <TextView
+                        android:id="@+id/profesorsayisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13"
+                        android:layout_marginLeft="5dp"
+                        android:textAlignment="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Docent Sayısı:"/>
+                    <TextView
+                        android:id="@+id/docentsayisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:layout_marginLeft="5dp"
+                        android:textAlignment="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Doktor Sayısı:"/>
+                    <TextView
+                        android:id="@+id/doktorsayisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:layout_marginLeft="5dp"
+                        android:textAlignment="center"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/favoriBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="favorilere ekle"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:background="@color/red"
+        android:textColor="#fff">
+
+    </Button>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

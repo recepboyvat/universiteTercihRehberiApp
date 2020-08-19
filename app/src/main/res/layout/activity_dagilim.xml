@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DagilimActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TYT SORU DAĞILIMLARI"
+            android:layout_marginHorizontal="30dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:background="@color/red"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginVertical="15dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/tytTurkceDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Türkçe"></Button>
+        <Button
+            android:id="@+id/tytMatematikDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matematik"></Button>
+        <Button
+            android:id="@+id/tytGeometriDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geometri"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/tytFizikDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fizik"></Button>
+        <Button
+            android:id="@+id/tytKimyaDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kimya"></Button>
+        <Button
+            android:id="@+id/tytBiyolojiDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biyoloji"></Button>
+        <Button
+            android:id="@+id/tytTarihDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/tytCografyaDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coğrafya"></Button>
+        <Button
+            android:id="@+id/tytFelsefeDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felsefe"></Button>
+        <Button
+            android:id="@+id/tytDinDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Din Kültürü"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AYT SORU DAĞILIMLARI"
+            android:layout_marginHorizontal="30dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:background="@color/red"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginVertical="15dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/aytMatematikDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matematik"></Button>
+        <Button
+            android:id="@+id/aytGeometriDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geometri"></Button>
+        <Button
+            android:id="@+id/aytFizikDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fizik"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/aytKimyaDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kimya"></Button>
+        <Button
+            android:id="@+id/aytBiyolojiDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biyoloji"></Button>
+        <Button
+            android:id="@+id/aytEdebiyatDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edebiyat"></Button>
+        <Button
+            android:id="@+id/aytCografya1Dagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coğrafya-1"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/aytTarihDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TARİH"></Button>
+        <Button
+            android:id="@+id/aytCografya2Dagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COĞRAFYA-2"></Button>
+        <Button
+            android:id="@+id/aytFelsefeDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FELSEFE"></Button>
+        <Button
+            android:id="@+id/aytDinDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DİN KÜLTÜRÜ"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YDT SORU DAĞILIMLARI"
+            android:layout_marginHorizontal="30dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:background="@color/red"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginVertical="15dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/aytDilDagilim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DİL"></Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

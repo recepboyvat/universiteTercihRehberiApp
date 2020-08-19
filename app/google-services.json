@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "32771216451",
+    "firebase_url": "https://yks-universite-rehberi.firebaseio.com",
+    "project_id": "yks-universite-rehberi",
+    "storage_bucket": "yks-universite-rehberi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32771216451:android:873e9174d19b47ba7c30f6",
+        "android_client_info": {
+          "package_name": "com.recepboyvat.universitesiralamalarivepuanlari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32771216451-rler2rk2f5p2b36ogguf1frtmddj6jl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADRAcTfyeyKjedrSEObUX_3Fzm9ZQhA-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32771216451-rler2rk2f5p2b36ogguf1frtmddj6jl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-1124250551775434~3569085160"
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramDetaylari.YorumlarFragment"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/internetTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1124250551775434/1713379334">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/yorumEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yorumunu belirt"
+        android:layout_marginTop="10dp"
+        ></EditText>
+    <Button
+        android:id="@+id/yorumYapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yorum Yap"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        >
+
+    </Button>
+
+    <ListView
+        android:id="@+id/yorumlarListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    </ListView>
+
+
+
+
+</LinearLayout>
+
+
+
+</ScrollView>

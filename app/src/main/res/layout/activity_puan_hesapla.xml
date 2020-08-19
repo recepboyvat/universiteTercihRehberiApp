@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PuanHesaplaActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diploma Notu(0-100)">
+
+        </TextView>
+        <EditText
+            android:id="@+id/diplomaNotuEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginHorizontal="10dp">
+
+        </EditText>
+
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="TYT"
+        android:textAlignment="center"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ders"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Türkçe(40 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sosyal(20 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matematik(40 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fen Bilgisi(20 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru"/>
+            <EditText
+                android:id="@+id/tytTurkceDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/tytSosyalDogruEditText"
+
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/tytMatematikDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/tytFenDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yanlış"/>
+            <EditText
+                android:id="@+id/tytTurkceYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/tytSosyalYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/tytMatematikYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/tytFenYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/tytTurkceNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:id="@+id/tytSosyalNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:id="@+id/tytMatematikNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:id="@+id/tytFenNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="AYT"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="Türk Dili ve Edebiyatı/Coğrafya-1"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ders"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edebiyat(24 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarih-1(10 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coğrafya-1(6 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru"/>
+            <EditText
+                android:id="@+id/aytEdebiyatDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytTarihDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytCografyaDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yanlış"/>
+            <EditText
+                android:id="@+id/aytEdebiyatYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytTarihYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytCografyaYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/aytEdebiyatNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:id="@+id/aytTarihNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:id="@+id/aytCografyaNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="Sosyal Bilimler-2"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ders"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarih-2(11 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coğrafya-2(11 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Felsefe(12 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Din Kültürü(6 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru"/>
+            <EditText
+                android:id="@+id/aytTarih2DogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytCografya2DogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytFelsefeDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytDinDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yanlış"/>
+            <EditText
+                android:id="@+id/aytTarih2YanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytCografya2YanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytFelsefeYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytDinYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/aytTarih2NetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:id="@+id/aytCografya2NetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:id="@+id/aytFelsefeNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:id="@+id/aytDinNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="Matematik"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ders"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matematik(40 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru"/>
+            <EditText
+                android:id="@+id/aytMatematikDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yanlış"/>
+            <EditText
+                android:id="@+id/aytMatematikYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/aytMatematikNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="Fen Bilimleri"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ders"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fizik(14 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kimya(13 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biyoloji(13 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru"/>
+            <EditText
+                android:id="@+id/aytFizikDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytKimyaDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytBiyolojiDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yanlış"/>
+            <EditText
+                android:id="@+id/aytFizikYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytKimyaYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/aytBiyolojiYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/aytFizikNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:id="@+id/aytKimyaNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:id="@+id/aytBiyolojiNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="Yabancı Dil Sınavı"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ders"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dil(80 Soru)"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru"/>
+            <EditText
+                android:id="@+id/aytDilDogruEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yanlış"/>
+            <EditText
+                android:id="@+id/aytDilYanlisEditText"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/aytDilNetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/HesaplaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesapla"
+            android:background="#D30016"
+            android:textColor="#fff"
+            android:layout_margin="10dp">
+
+        </Button>
+        <Button
+            android:id="@+id/TemizleButton"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temizle"
+            android:background="#D30016"
+            android:textColor="#fff">
+
+        </Button>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="TYT Puanları(2019 Sabit Katsayılar)"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puan Tipi"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TYT Puanı"
+                >
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham"/>
+            <TextView
+                android:id="@+id/tytHamPuanTextView"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yerleştirme"/>
+            <TextView
+                android:id="@+id/tytYerlestirmePuan"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eksik"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/tytEksikPuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="AYT Puanları(2019 Sabit Katsayılar)"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puan Türü"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eşit Ağırlık"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sözel"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sayısal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham"/>
+            <TextView
+                android:id="@+id/aytEAHamPuanTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+            <TextView
+                android:id="@+id/aytSozelHamPuanTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+            <TextView
+                android:id="@+id/aytSayisalHamPuanTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yerleştirme"/>
+            <TextView
+                android:id="@+id/aytEaYerPuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+            <TextView
+                android:id="@+id/aytSozelYerPuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+            <TextView
+                android:id="@+id/aytSayisalYerPuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eksik"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/aytEAEksikPuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"/>
+
+
+            <TextView
+                android:id="@+id/aytSozelEksikPuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+            <TextView
+                android:id="@+id/aytSayisalEksikPuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="13dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="#D30016"
+        android:textColor="#fff"
+        android:text="Yabancı Dil Puanı(2019 Sabit Katsayılar)"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puan Tipi"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dil"
+                >
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham"/>
+            <TextView
+                android:id="@+id/aytDilHamPuan"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yerleştirme"/>
+            <TextView
+                android:id="@+id/aytDilYerPuan"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eksik"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="6dp"/>
+
+            <TextView
+                android:id="@+id/aytDilEksikPuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

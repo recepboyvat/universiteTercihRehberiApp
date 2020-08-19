@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.KayitOlActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="35dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="#fcfcfc"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_person_black_24dp">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_person_black_24dp">
+
+        </ImageView>
+            <EditText
+                android:id="@+id/kullaniciAdiEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Kullanıcı Adı">
+
+            </EditText>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_work_black_24dp">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/hedefEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Hedef">
+
+            </EditText>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="30dp"
+        android:layout_gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cinsiyet"
+
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20dp"
+
+            ></TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_erkek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Erkek"
+               />
+            <RadioButton android:id="@+id/radio_kadin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Kadın"
+               />
+            <RadioButton android:id="@+id/radio_lgbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Sanane"
+                />
+
+        </RadioGroup>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_email_black_24dp">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Email">
+
+            </EditText>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_vpn_key_black_24dp">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/parolaEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Parola"
+                android:inputType="textPassword"
+                >
+
+            </EditText>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_vpn_key_black_24dp">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/parolaTekrarEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Parola Tekrar"
+                android:inputType="textPassword"
+                >
+
+            </EditText>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kayitOlCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:onClick="KayıtOl">
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/girisYapGitCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:onClick="girisYapGit">
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

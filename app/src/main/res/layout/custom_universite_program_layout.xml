@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/imageViewUniversityProgram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/universityProgramUniAdiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Üniversite Adı"
+        android:textSize="13dp"/>
+    <TextView
+        android:id="@+id/universityProgramProgramAdiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Adi"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/basariSiralama"
+                android:paddingLeft="5dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Başarı Sıralaması:"/>
+                <TextView
+                    android:id="@+id/universityProgramBasariSiralama"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tabanPuan"
+                android:paddingLeft="5dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Taban Puan:"/>
+            <TextView
+                android:id="@+id/universityProgramTabanPuan"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
